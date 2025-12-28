@@ -1,0 +1,16 @@
+[project]
+name = "otf"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "cryptography>=46.0.3",
+    "python-dotenv>=1.2.1",
+]
+
+[project.scripts]
+otf = "otf.cli:main"
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
