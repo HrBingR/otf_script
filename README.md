@@ -2,7 +2,7 @@
 
 `otf` is a small CLI wrapper that decrypts selected OpenTofu/Terraform files before running a command, then re-encrypts them afterward. This keeps state/vars encrypted at rest while preserving a normal workflow.
 
-Repository URL: <YOUR_URL_HERE>
+Repository URL: https://github.com/HrBingR/otf_script
 
 ## What it does
 
