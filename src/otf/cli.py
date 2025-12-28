@@ -275,7 +275,8 @@ def init() -> tuple[bytes, list[str], list[str]]:
     """
     Checks if OTF_PASSWORD env is defined
     """
-    load_dotenv()
+    cwd = os.getcwd()
+    load_dotenv(dotenv_path=os.path.join(cwd, ".env"))
     otf_pass = os.getenv("OTF_PASSWORD")
     if not otf_pass:
         print("ERROR: OTF_PASSWORD environment variable not found", file=sys.stderr)
